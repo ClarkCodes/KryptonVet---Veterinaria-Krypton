@@ -1,4 +1,5 @@
 @import url( "baseCommonStyles.css" );
+@import url( "themes/themeStyles.css" );
 
 * { 
     color: var( --light-theme-foreground-color );
@@ -7,7 +8,6 @@
     margin-left: 1%;
     margin-right: 1%;
 }
-
 
 .DivHeaderClass {
     position: relative;
@@ -57,7 +57,6 @@
     padding-bottom: 2vh;
 }
 
-/* Con un selector de clase selecciona 3 elementos de tu página, con propiedades de estilo: color y tamaño de fuente. */
 .PageDescriptionClass, .MissionClass, .ThanksForVisitingClass {
     p, strong, em {
         margin-left: auto;
@@ -69,13 +68,11 @@
     }
 }
 
-/* Selecciona un elemento de bloque por id, agrégale propiedades alineación de texto centrado y decoración de texto subrayado. */
 #idMomentosEnNuestraLaborP {
     text-align: center;
     text-decoration: underline;
 }
 
-/* Selecciona un elemento en línea debe tener texto en negritas y transformación del texto a capitalizado. */
 #Farmacia span {
     font-weight: bold; 
     text-transform: capitalize;
@@ -86,8 +83,6 @@
     font-weight: bold;
 }
 
-/* Agregue a las imágenes de su página web y selecciónelas con un selector de atributos. 
-Colocarle ancho, alto y borde con un radio de 50% (border-radius). */
 img[width="700"] { /* Selecciona la Imagen de la Farmacia que es la que coincide con el valor del atributo de ancho especificado */
     width: 750px;
     height: 1000px;
@@ -133,6 +128,12 @@ iframe, video {
     mask-image: linear-gradient( black 98%, transparent );
 }
 
+#MomentosEnNuestraLabor {
+    img {
+        border-radius: 4.5%;
+    }
+}
+
 #MomentosEnNuestraLabor, #NuestroEquipo {
     table {
         margin-left: auto;
@@ -170,6 +171,30 @@ iframe, video {
 }
 
 button {
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 10%;
+    padding: 10px 20px;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    border-radius: 4px; /* Rounded corners para un lindo look y estilo moderno */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: darkorange; /* Lighter on hover */
+        transition: background-color .3s ease;
+    }
+
+    &:active { 
+        background-color: orangered; /* Darker on press */
+        transition: background-color .1s ease;
+    }
+}
+
+button {
     width: 35%;
     height: 55px;
 }
@@ -180,7 +205,7 @@ body {
 }
 
 .ClarkClass strong {
-    color: var( --kryptonvet-foreground-dark-color ) !important;
+    color: var( --kryptonvet-foreground-dark-color );
     text-align: center;
 }
 

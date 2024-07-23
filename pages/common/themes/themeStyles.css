@@ -1,13 +1,5 @@
 @import "https://unpkg.com/open-props/easings.min.css";
-
-:root {
-    --dark-theme-background-color: #222222;
-    --dark-theme-foreground-color: #F7F1FF;
-    --dark-theme-accent-color: #FAF5D0;
-    --light-theme-background-color: #f0f8f8;
-    --light-theme-foreground-color: #444444;
-    --light-theme-accent-color: #3B3B3B;
-}
+@import url( "../baseCommonStyles.css" );
 
 .theme-switch-wrapper {
     position: absolute;
@@ -16,6 +8,7 @@
     width: auto;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .theme-switch {
@@ -96,9 +89,6 @@ body {
     color: var( --light-theme-foreground-color );
     background-color: var( --light-theme-background-color );
     
-    nav li a:link {
-        color: var( --light-theme-accent-color );
-    }
 
     #ClarkId {
         padding-left: 0px;
@@ -109,8 +99,8 @@ body {
 .sun-and-moon {                                                         
     position: relative;
     padding-left: 0%;
-    margin-left: -90%;
-    margin-top: -73%;
+    margin-left: 11%;
+    margin-top: -30%;
     box-sizing: content-box;
     display: flex;
     transition: transform .3s linear;
@@ -152,21 +142,13 @@ body.dark-mode {
         color: var( --dark-theme-accent-color );
     }
 
-    nav li a:link {
-        color: var( --dark-theme-accent-color );
-    }
-
-    nav li a:visited {
-        color: #ff4c20;
-    }
-
     #ClarkId {
         padding-left: 0px;
         color: var( --dark-theme-accent-color );
     }
 
     .sun-and-moon {  
-        transform: translateX( 85% );
+        transform: translateX( 1.96vw );
 
         .sun {
             transform: scale( 1.75 );
