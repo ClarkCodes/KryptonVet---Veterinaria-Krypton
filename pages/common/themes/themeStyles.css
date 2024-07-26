@@ -55,9 +55,10 @@
 .slider:before {
     position: inherit;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
+    height: 32px;
+    width: 32px;
+    top: 1px;
+    left: 1px;
     bottom: 4px;
     background-color: var( --light-theme-foreground-color );
     transition: .4s;
@@ -85,14 +86,107 @@ input:checked + .slider:before {
 }
 
 body {
-    transition: background-color .3s ease;
-    color: var( --light-theme-foreground-color );
-    background-color: var( --light-theme-background-color );
+    transition: background-color .3s ease-in-out;
+    color: var( --kv-foreground-black-color-81 );
+    background-color: var( --kv-light-theme-background-lightmid );
     
+    .HeaderLinksClass {
+        background-color: var( --kryptonvet-foreground-dark-color );
+    }
 
-    #ClarkId {
-        padding-left: 0px;
-        color: var( --light-theme-accent-color );
+    .MainMenuClass li a {
+        transition: background-color .1s;
+        font-family:'EncodeSans';
+
+        &:hover{
+            background-color: var( --kv-thirdy-accent-color-darkest );
+            color: var( --kv-secondary-accent-color-darkest );
+            font-weight: bold;
+            transition: background-color .27s; /* Smooth transition on hover */
+        }
+
+        &:link {
+            text-decoration: none;
+            color: var( --kv-foreground-white-color-81 );
+        }
+
+        &:visited {
+            color: var( --kv-foreground-white-color-81 );
+        }
+    }
+
+    h2, h3 {
+        letter-spacing: .05em;
+    }
+
+    h1, h2, h3, b, strong {
+        font-family:'EncodeSans';
+        font-weight: bold;
+        color: var( --kv-thirdy-accent-color-darkmid );
+    }
+
+    #siteCaptionId {
+        letter-spacing: .1em;
+        line-height: 1.7em;
+        font-family: 'EncodeSans';   
+    }
+
+    .PageDescriptionClass, .MissionClass, .ThanksForVisitingClass {
+        p, strong, em {
+            color: var( --kv-thirdy-accent-color-darkmid );
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .MissionClass p em {
+        width: 50%;
+        font-weight: bold;
+        font-family: 'Urbanist';
+        letter-spacing: .09em;
+    }
+
+    #ClarksId {
+        color: var( --kv-primary-accent-color-darkmid );
+        font-family:'FiraCodeNerdFontMono-Bold';
+        font-size: 24pt;
+    }
+
+    footer {
+        background-color: var( --kryptonvet-foreground-light-color );
+
+        address, a {
+            font-family: 'EncodeSans';
+            font-weight: bold;
+            color: var( --kv-light-theme-foreground-lightest-70 );
+        }
+
+        #copyrightSignDivId {
+            strong {
+                color: var( --kv-thirdy-accent-color-darkest );
+                font-weight: bold;
+            }
+    
+            h7 {
+                color: var( --kv-foreground-black-color-61 );
+            }
+        }
+
+        .TextLinksClass {
+            transition: color .1s ease, text-shadow .1s ease-out;
+    
+            &:link {
+                text-decoration: none;
+            }
+    
+            &:hover { 
+                transition: color .1s ease, text-shadow .11s ease-in;
+                color: white;
+                text-shadow: 3px 3px 5px var( --kv-primary-accent-color-darkest );
+            }
+        }
     }
 }
 
@@ -100,7 +194,7 @@ body {
     position: relative;
     padding-left: 0%;
     margin-left: 11%;
-    margin-top: -30%;
+    margin-top: -30.8%;
     box-sizing: content-box;
     display: flex;
     transition: transform .3s linear;
@@ -134,17 +228,72 @@ body {
 }
 
 body.dark-mode {
-    transition: background-color .3s ease;
-    background-color: var( --dark-theme-background-color );
-    color: var( --dark-theme-foreground-color );
+    transition: background-color .3s ease-in-out;
+    color: var( --kv-foreground-white-color-61 );
+    background-color: var( --kv-dark-theme-background-darksoft );
 
-    h1, h2, h3, b, strong {
-        color: var( --dark-theme-accent-color );
+    .HeaderLinksClass {
+        background-color: var( --kv-dark-theme-background-darkmid );
     }
 
-    #ClarkId {
-        padding-left: 0px;
-        color: var( --dark-theme-accent-color );
+    .MainMenuClass li a {
+        transition: background-color .1s;
+
+        &:hover{
+            background-color: var( --kv-primary-accent-color-darkmid );
+            color: var( --kv-secondary-accent-color-darkest );
+            transition: background-color .27s; /* Smooth transition on hover */
+        }
+
+        &:link {
+            color: var( --kv-foreground-white-color-81 );
+        }
+
+        &:visited {
+            color: var( --kv-foreground-white-color-81 );
+        }
+    }
+
+    h1, h2, h3, b, strong {
+        color: var( --kv-primary-accent-color-light );
+    }
+
+    
+    .PageDescriptionClass, .MissionClass, .ThanksForVisitingClass {
+        p, strong, em {
+            color: var( --kv-foreground-white-color-81 );
+        }
+    }
+
+    #ClarksId {
+        color: var( --kv-secondary-accent-color-darkmid );
+    }
+
+    footer {
+        background-color: var( --kv-thirdy-accent-color-darkest );
+
+        address, a {
+            color: var( --kv-foreground-white-color-81 );
+        }
+
+        #copyrightSignDivId {
+            strong {
+                color: var( --kv-thirdy-accent-color-darkest );
+            }
+    
+            h7 {
+                color: var( --kv-foreground-black-color-61 );
+            }
+        }
+
+        .TextLinksClass {
+            transition: color .1s ease, text-shadow .1s ease-out;
+    
+            &:hover { 
+                transition: color .1s ease, text-shadow .11s ease-in;
+                color: white;
+            }
+        }
     }
 
     .sun-and-moon {  

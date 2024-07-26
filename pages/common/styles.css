@@ -2,8 +2,6 @@
 @import url( "themes/themeStyles.css" );
 
 * { 
-    color: var( --light-theme-foreground-color );
-    font-family:'Segoe UI';
     font-size: 16pt;
     margin-left: 1%;
     margin-right: 1%;
@@ -51,48 +49,6 @@
     padding: 0%;
 }
 
-#siteCaptionId {
-    text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-}
-
-.PageDescriptionClass, .MissionClass, .ThanksForVisitingClass {
-    p, strong, em {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        font-size: 20pt;
-        color: slateblue;
-        text-align: center;
-    }
-}
-
-#idMomentosEnNuestraLaborP {
-    text-align: center;
-    text-decoration: underline;
-}
-
-#Farmacia span {
-    font-weight: bold; 
-    text-transform: capitalize;
-}
-
-.MissionClass p {
-    width: 50%;
-    font-weight: bold;
-}
-
-img[width="700"] { /* Selecciona la Imagen de la Farmacia que es la que coincide con el valor del atributo de ancho especificado */
-    width: 750px;
-    height: 1000px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 7px solid var( --kryptonvet-foreground-dark-color );
-}
-
 h1 {
     font-size: 36pt;
     padding-top: 1%;
@@ -101,6 +57,8 @@ h1 {
 h2 {
     font-size: 24pt;
     margin-left: 0%;
+    padding-top: 9vh;
+    padding-bottom: 5.7vh;
 }
 
 h3 {
@@ -117,10 +75,34 @@ p {
     line-height: 2.0;
 }
 
-iframe, video {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+#siteCaptionId {
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+.PageDescriptionClass, .MissionClass, .ThanksForVisitingClass {
+    p, strong, em {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        font-size: 18pt;
+        text-align: center;
+    }
+}
+
+#Productos table, #NuestrosServicios table {
+    
+    margin-top: -7vh;
+}
+
+.ThanksForVisitingClass p {
+    padding-bottom: 7vh;
+}
+
+#ClarksId {
+    text-align: center;
+    padding-bottom: 7vh;
 }
 
 #FundadorImgId {
@@ -128,32 +110,8 @@ iframe, video {
     mask-image: linear-gradient( black 98%, transparent );
 }
 
-#MomentosEnNuestraLabor {
-    img {
-        border-radius: 4.5%;
-    }
-}
-
-#MomentosEnNuestraLabor, #NuestroEquipo {
-    table {
-        margin-left: auto;
-        margin-right: auto;
-
-        img {
-            
-            transition: box-shadow .1s ease, scale .1s ease;
-
-            &:hover {
-                box-shadow: 8px 8px 12px rgba( 0, 0, 0, .5 );
-                scale: 1.2;
-                transition: box-shadow .3s ease, scale .3s ease;
-            }
-        }
-    }
-}
-
 #NuestroEquipo table {
-    width: 93%;
+    width: 100%;
         
     img {
         display: block;
@@ -164,17 +122,76 @@ iframe, video {
     }
 
     td { 
-        padding-left: 1.5%;
-        padding-right: 1.7%;
+        padding-inline: 1.7%;
         vertical-align: top;
     }
 }
 
+#doctorsTableRowId td strong {
+    border-top: 2px solid var( --kv-primary-accent-color-darksoft );
+    padding-top: 1vh;
+}
+
+#idMomentosEnNuestraLaborP {
+    text-align: center;
+}
+
+#MomentosEnNuestraLabor img {
+    border-radius: 4.5%;
+}
+
+#MomentosEnNuestraLabor, #NuestroEquipo {
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5vh;
+
+        img {
+            transition: box-shadow .1s ease, scale .1s ease-out;
+
+            &:hover {
+                box-shadow: 8px 8px 12px rgba( 0, 0, 0, .5 );
+                scale: 1.2;
+                transition: box-shadow .3s ease, scale .3s ease;
+            }
+        }
+    }
+}
+
+#youtubeVideoId {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#Farmacia span {
+    font-weight: bold; 
+    text-transform: capitalize;
+}
+
+img[width="700"] { /* Selecciona la Imagen de la Farmacia que es la que coincide con el valor del atributo de ancho especificado */
+    width: 750px;
+    height: 1000px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid var( --kv-primary-accent-color-darkmid );
+}
+
+iframe, video {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
-    background-color: orange;
-    color: white;
-    border: none;
-    width: 10%;
+    background-color: var( --kv-primary-accent-color-light );
+    border: 2px solid var( --kv-secondary-accent-color-darkmid );
+    box-shadow: 0px 0px 12px #EE812250, inset 0px 0px 30px .5px var( --kv-secondary-accent-color-darkest ), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24), inset 0 0 20px var( --kv-secondary-accent-color-darkest );
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
+    /*box-shadow: inset 0 0 10px var( --kv-secondary-accent-color-darkest ), inset 0 0 20px var( --kv-secondary-accent-color-darkest ), inset 0 0 30px var( --kv-secondary-accent-color-darkest );*/
+    width: 35%;
+    height: 55px;
     padding: 10px 20px;
     margin-top: 4vh;
     margin-bottom: 2vh;
@@ -183,30 +200,20 @@ button {
     cursor: pointer;
     transition: background-color .2s ease;
 
+    a {
+        color: var( --kv-foreground-light-strong-color-bg );
+        text-decoration: none;
+    }
+
     &:hover {
-        background-color: darkorange; /* Lighter on hover */
+        background-color: var( --kv-primary-accent-color-lesslight ); /* Lighter on hover */
         transition: background-color .3s ease;
     }
 
     &:active { 
-        background-color: orangered; /* Darker on press */
+        background-color: var( --kv-primary-accent-color-lightless ); /* Darker on press */
         transition: background-color .1s ease;
     }
-}
-
-button {
-    width: 35%;
-    height: 55px;
-}
-
-body {
-    transition: background-color 0.5s ease;
-    background-color: var( --light-theme-background-color );
-}
-
-.ClarkClass strong {
-    color: var( --kryptonvet-foreground-dark-color );
-    text-align: center;
 }
 
 form {
@@ -248,7 +255,7 @@ form {
         width: 50%;
         padding: 8px;
         margin-top: 1vh;
-        margin-bottom: 10vh;
+        margin-bottom: 11vh;
         padding-inline: 1vw;
         border: 1px solid orange;
         border-radius: 4px;
@@ -257,14 +264,15 @@ form {
     }
 
     input[type="submit"] {
-        background-color: var( --kryptonvet-foreground-dark-color );
+        background-color: var( --kv-primary-accent-color-darkmid );
         color: white;
         border: none;
         width: 10%;
-        padding: 10px 20px;
+        padding: 10px 30px;
         margin-top: 4vh;
-        margin-bottom: 2vh;
-        border-radius: 4px; /* Rounded corners para un lindo look y estilo moderno */
+        margin-bottom: 10vh;
+        border: 3px solid var( --kv-primary-accent-color-darksoft );
+        border-radius: 5px; /* Rounded corners para un lindo look y estilo moderno */
         text-transform: uppercase;
         cursor: pointer;
         transition: background-color .2s ease;

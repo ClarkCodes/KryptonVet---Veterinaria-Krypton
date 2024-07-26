@@ -1,10 +1,11 @@
 @import url( "baseCommonStyles.css" );
+@import url( "themes/themeStyles.css" );
 
 * { 
-    color: var( --light-theme-foreground-color );
-    font-family:'Segoe UI';
     font-size: 16pt;
 }
+
+/* Header Section */
 
 .HeaderLogoBannerDivClass {
     position: relative;
@@ -36,7 +37,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    background-color: var( --kryptonvet-foreground-dark-color );
     margin-left: -3.1%; 
     margin-right: -3%;
     margin-top: -12vh;
@@ -49,24 +49,11 @@ header {
     text-align: center;
 }
 
-.MainMenuClass {
-    li a {
-        padding-inline: 1.8vw;
-    }
-
-    li a:hover{
-        background-color: var( --kryptonvet-background-dark-color );
-        color: var( --dark-theme-accent-color );
-        font-weight: bold;
-        transition: background-color .27s; /* Smooth transition on hover */
-    }
-}
-
 nav {
     display: grid;
     
     ul {
-        list-style-type: none; /* Quitamos las viñetas de la lista */
+        list-style-type: none;
     }
 
     li {
@@ -74,21 +61,18 @@ nav {
 
         a {  
             text-decoration: none;
-            padding-top: 4.5vh;
-            padding-bottom: 4.5vh;
-            transition: background-color .1s;
-
-            &:link {
-                text-decoration: none;
-                color: var( --dark-theme-foreground-color );
-            }
-
-            &:visited {
-                color: var( --dark-theme-accent-color );
-            }
         }
     }
 }
+
+.MainMenuClass li a {
+    text-decoration: none;
+    padding-top: 4.7vh;
+    padding-bottom: 4.5vh;
+    padding-inline: 1.8vw;
+}
+
+/* Footer Section */
 
 #footerMainSectionDivId {
     display: flex;
@@ -101,7 +85,6 @@ nav {
 }
 
 footer {
-    background-color: var( --kryptonvet-foreground-light-color );
     margin-left: -2.1%;
     margin-right: -2%;    
     display: flex;
@@ -110,13 +93,18 @@ footer {
 
     div {
         padding-top: 2vh;
-        padding-inline: 1.4vw;
+        padding-inline: 1.2vw;
+    }
+
+    h3 {
+        color: var( --kv-thirdy-accent-color-darkest );
     }
 
     address, a {
-        font-size: 14pt;
+        font-size: 13pt;
         line-height: 30pt;
         font-style: normal;
+        letter-spacing: .4pt;
     }
 
     #contactenosAddressId {
@@ -127,18 +115,10 @@ footer {
         position: absolute;
         margin-top: 1.94vh;
         margin-left: -1.5vw;
-        filter: brightness(0) saturate(100%) invert(11%) sepia(35%) saturate(1102%) hue-rotate(141deg) brightness(96%) contrast(101%);
+        filter: brightness(0) saturate(100%) invert(18%) sepia(54%) saturate(1221%) hue-rotate(203deg) brightness(86%) contrast(113%);
     }
 
-    a {
-        &:link {
-            text-decoration: none;
-        }
-
-        &:hover { 
-            text-decoration: underline;
-        }
-    }
+    
 
     #footerKryptonVetLogoDivId {
         margin-inline: 0;
@@ -191,7 +171,7 @@ footer {
 
     #CSLogoImgId {
         position: absolute;
-        margin-left: -33.5vw;
+        margin-left: -34.5vw;
         margin-top: 3vh;
         height: 55px;
         opacity: 0.7;
@@ -199,20 +179,21 @@ footer {
 
     #socialLinksNavId, #freepikDivId {
         li a {
-            padding-inline: 1.2vw;
+            padding-inline: 1.53vw;
         }
 
         a {
             img {
                 opacity: 0.8;
-                transition: scale .1s ease, opacity .1s ease;
+                transition: scale .1s ease, opacity .1s ease, filter .2s ease-out;
             }
 
             &:hover {                 
                 img {
+                    transition: scale .3s ease, opacity .3s ease, filter .3s ease-in;
                     opacity: 1;
                     scale: 1.2;
-                    transition: scale .3s ease, opacity .3s ease;
+                    filter: drop-shadow( 0px 0px 10px var( --kv-secondary-accent-color-darkest ) );
                 }
             }
         }
@@ -228,12 +209,7 @@ footer {
 
         h7 {
             line-height: 40pt;
-    
         }
-    }
-}
 
-body {
-    transition: background-color 0.5s ease;
-    background-color: var( --light-theme-background-color );
+    }
 }
