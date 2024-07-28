@@ -35,6 +35,31 @@ Para poder realizar este proyecto educativo, hemos tomado inspiración, y en alg
 ## Estado del Proyecto
 Se está trabajando en el proyecto, practicando y haciendo cambios constantes al menos por el siguiente mes de julio del 2024, luego de esto puede que se sigan haciendo cambios a modo de prueba y experimentación de manera más esporádica, de todas maneras, el proyecto sirve a modo de ejemplo en cuanto a cómo poder hacer alguna cosa o la otra en html y css que este incluya, cualquiera que se interese puede ver el código, ver como está hecho y poder hacerlo también en sus proyectos.
 
+En cada iteración que hacemos, exploramos opciones y vamos poco a poco mejorando y refinando el frontend, el sitio actualmente cuenta con: 
+
+### Navegación entre múltiples páginas
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/5d2e5cb8-7292-476f-a898-39fde535b95b" alt="Imágen: Navegación entre páginas - Página de Quienes Somos de KryptonVet"/>
+</p>
+
+### Formulario de Contáctenos
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a47c7521-6d5f-4fd6-9ee8-f7c8f79a6c58" alt="Imágen: Formulario de Contáctenos de KryptonVet"/>
+</p>
+
+### Tema Claro y Oscuro con detección de Preferencia del Sistema
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/7ab6c3b1-6d0c-4e97-847e-e7a79ed0355c" alt="Imágen: Apariencia de Tema Claro en Cabecera con Logo y Menú de Navegación de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/c18cb32e-d437-4926-ab2c-7caa4da1a334" alt="Imágen: Apariencia de Tema Oscuro en Cabecera con Logo y Menú de Navegación de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/65e9e9ce-d778-4dd9-a3db-44f3d9369739" alt="Imágen: Apariencia de Tema Claro en Pié de Página con Logo y Links adicionales de información"/>
+    <img src="https://github.com/user-attachments/assets/f83c0b83-a20c-4bf0-a028-50237792ee63" alt="Imágen: Apariencia de Tema Oscuro en Pié de Página con Logo y Links adicionales de información"/>
+</p>
+
+### Y un mensaje de agradecimiento
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/74a55374-9177-4f8b-8e76-74f49d22b7a1" alt="Imágen: Mensaje de Despedida de KryptonVet"/>
+</p>
+
 ## Datos acerca de KryptonVet
 * El logo se creó utilizando IA, se usó Miscrosoft Copilot, la cual usó internamente DALL-E 3 para crear el logo, luego se lo refinó y se diseño manualmente la parte textual usando GIMP, componiento un imagotipo, el cual es el logo actual.
 * Las imágenes en algunos casos también fueron refinadas y editadas para un mejor aspecto, más adecuado y un acabado más profesional.
