@@ -8,10 +8,34 @@
         <meta name="description" content="Página de la Veterinaria Krypton, donde encuentras todo lo que tu mascota necesita.">
         <meta name="keywords" content="veterinaria, mascota, perro, gato, lagartijo, tigre, collares, pulgas, garrapatas, tratamientos">
         <link rel = "stylesheet" type="text/css" href="pages/common/styles.css" />
-        <link rel="icon" type="image/png" sizes="29x32" href="pages/common/images/FAVICON_KryptonVet_Logo_Imagotipo_Remasterizado_29x32.png">
+        <link rel="icon" type="image/x-icon" href="common/icons/FAVICON_KryptonVet.ico">
+        <script src="pages/common/themes/themeCode.js"></script>
         <title>KryptonVet</title>
     </head>
     <body>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-checkbox">
+                <input type="checkbox" id="theme-checkbox" aria-label="auto" />
+                <div class="slider round"></div>
+                <svg class="sun-and-moon" id="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
+                    <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                    <g class="sun-beams" stroke="currentColor">
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </g>
+                    <mask class="moon" id="moon-mask">
+                        <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                        <circle cx="24" cy="10" r="6" fill="black" />
+                    </mask>
+                </svg>
+            </label>
+        </div>
         <div class="DivHeaderClass">
             <iframe class="HeaderIFrameClass" src="pages/common/header.html" scrolling = "no" title="HeaderFrame"></iframe>
         </div>
@@ -21,22 +45,15 @@
         </h3>
         <div class="PageDescriptionClass" id="pageDescription">
             <p>
-                <em>
-                    Su mascota necesita el cuidado y atención que se merece, que usted realmente le quiere dar, para ello, aquí encontrará los mejores
-                    productos del mercado para el cuidado, mantenimiento y la salud de su mascota, sobre todo, con los precios más económicos que podrá
-                    encontrar, con la mejor calidad que existe. Sírvase a revisar los productos y servicios que tiene Veterinaria Krypton para 
-                    ofrecerle, de seguro encontrará algo que le gustará, y a su mascota mucho más.
-                </em>
+                Su mascota necesita el cuidado y atención que se merece, que usted realmente le quiere dar, para ello, aquí encontrará los mejores
+                productos del mercado para el cuidado, mantenimiento y la salud de su mascota, sobre todo, con los precios más económicos que podrá
+                encontrar, con la mejor calidad que existe. Sírvase a revisar los productos y servicios que tiene Veterinaria Krypton para 
+                ofrecerle, de seguro encontrará algo que le gustará, y a su mascota mucho más.
             </p>
         </div>
-        <br>
         <main>
             <div>
-                <section id="MomentosEnNuestraLabor">
-                    
-                </section>
                 <section id="Productos">
-                    <br>
                     <h2>PRODUCTOS</h2>
                     <table>
                         <th width="700"></th>
@@ -45,12 +62,12 @@
                             <td>
                                 <h3>Calidad & Experiencia</h3>
                                 <p>
-                                    Somos una clínica veterinaria que se dedica a la prestación de un servicio integral en los ámbitos de los cuidados 
+                                    Somos una clínica veterinaria que se dedica a la prestación de un servicio integral en los ámbitos de cuidados 
                                     clínicos veterinarios y asesoramiento, contamos con los mejores proveedores y tenemos convenios con los mejores 
                                     laboratorios, las marcas más recomendadas y avaladas por la ciencia y el Ministerio de Salud.
                                 </p>
                                 <button>
-                                    <a href="pages/Productosveterinariacss.html">Ver los Productos</a>
+                                    <a href="pages/Productos.html">Productos</a>
                                 </button>
                             </td>
                             <td>
@@ -60,7 +77,6 @@
                     </table>
                 </section>
                 <section id="NuestrosServicios">
-                    <br>
                     <h2>NUESTROS SERVICIOS</h2>
                     <table>
                         <th width="700"></th>
@@ -69,7 +85,7 @@
                             <td>
                                 <h3>Ofrecemos servicios de alta calidad</h3>
                                 <p>
-                                    Conozca todos los servicios que ofrecemos
+                                    Conozca todos los servicios que ofrecemos.
                                 </p>
                                 <p>
                                     Somos un equipo de Médicos Veterinarios y personal capacitado para la atención integral de las mascotas, 
@@ -77,7 +93,7 @@
                                     puedan adquirir.
                                 </p>
                                 <button>
-                                    <a href="pages/serviciosveterinariacss.html">Ver los Servicios</a>
+                                    <a href="pages/NuestrosServicios.html">Servicios</a>
                                 </button>
                             </td>
                             <td>
@@ -86,18 +102,17 @@
                         </tr>
                     </table>
                 </section>
-
                 <section class="ThanksForVisitingClass" id="GraciasPorVisitarnos">
-                    <br><br><br>
                     <h2>Gracias por visitarnos</h2>
                     <p>
-                        Muchas gracias por ver nuestro contenido y todo lo que tenemos para ofrecerte, esperamos haya sido de tu agrado y cuentes 
-                        con todo lo que tenemos para como herramientas en tu vida y la de tu mascota, y hagas uso de esta en caso que las necesites,
-                        así como para una mejor vida y bienestar de tu amigo peludo, seguro te lo agradecerá, siempre será un placer para nosotros 
-                        atenderlos de la mejor manera, con los mejores profesionales y con los mejores productos de la más alta calidad, hasta la próxima.
+                        Muchas gracias por ver nuestro contenido y todo lo que tenemos para ofrecerle, esperamos haya sido de su agrado y cuente 
+                        con todo lo que tenemos para como herramientas en su vida y la de su mascota, y haga uso de esta en caso que las necesite,
+                        así como para una mejor vida y bienestar de su amigo peludo, seguro se lo agradecerá, siempre será un placer para nosotros 
+                        atenderlos de la mejor manera, con los mejores profesionales y con los mejores productos de la más alta calidad. <br>Este sitio 
+                        web ha sido desarrollado con entusiasmo y amor, hasta la próxima ☻.
                     </p>
-                    <p><strong>Happy Coding!,</strong></p>
-                    <p class="ClarkClass"><strong>Clark.</strong></p>
+                    <h3>Happy Coding!,</h3>
+                    <h3 id="ClarksId">&#xf47d;Clark&#xf460;</h3>
                 </section>
             </div>
         </main>
