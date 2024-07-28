@@ -90,19 +90,19 @@ body {
     color: var( --kv-foreground-black-color-81 );
     background-color: var( --kv-light-theme-background-lightmid );
     
-    .HeaderLinksClass {
-        background-color: var( --kryptonvet-foreground-dark-color );
-    }
-
-    .MainMenuClass li a {
-        transition: background-color .1s;
+    .HeaderLinksClass a {
+        transition: color .1s ease, text-shadow .1s ease;
+        color: var( --kv-foreground-white-color-91 );
         font-family:'EncodeSans';
-
+        padding-bottom: 15px;
+        
         &:hover{
-            background-color: var( --kv-thirdy-accent-color-darkest );
+            /*background-color: var( --kv-thirdy-accent-color-darkest );*/
             color: var( --kv-secondary-accent-color-darkest );
+            border-bottom: 5px solid var( --kv-primary-accent-color-darkmid );
             font-weight: bold;
-            transition: background-color .27s; /* Smooth transition on hover */
+            text-shadow: 2px 2px 3px var( --kv-primary-accent-color-darkmid );
+            transition: color .2s ease-in, text-shadow .2s ease; /* Smooth transition on hover */
         }
 
         &:link {
@@ -182,7 +182,7 @@ body {
             }
     
             &:hover { 
-                transition: color .1s ease, text-shadow .11s ease-in;
+                transition: color .1s ease, text-shadow .11s ease;
                 color: white;
                 text-shadow: 3px 3px 5px var( --kv-primary-accent-color-darkest );
             }
@@ -228,7 +228,7 @@ body {
 }
 
 body.dark-mode {
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in;
     color: var( --kv-foreground-white-color-61 );
     background-color: var( --kv-dark-theme-background-darksoft );
 
@@ -291,7 +291,7 @@ body.dark-mode {
     
             &:hover { 
                 transition: color .1s ease, text-shadow .11s ease-in;
-                color: white;
+                color: var( --kv-foreground-white-color-91 );
             }
         }
     }

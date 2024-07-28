@@ -21,7 +21,7 @@
 
 .HeaderIFrameClass {
     width: 100%;
-    height: 22rem;
+    height: 18rem;
     border: none;
     margin-left: 0;
     margin-right: 0;
@@ -40,13 +40,13 @@
 }
 
 .FooterIFrameClass {
+    position: bottom;
     width: 100%;
     height: 19.6rem;
     border: none;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: -10vh;
-    padding: 0%;
 }
 
 h1 {
@@ -227,6 +227,7 @@ form {
         border-radius: 4px; /* Rounded corners for a modern look, queda bonito */
         box-sizing: border-box;
     }
+    
     #lblPhoneId {
         padding-right: 14.57%;
     }
