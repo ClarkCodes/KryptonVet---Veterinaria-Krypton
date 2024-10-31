@@ -230,7 +230,7 @@ body {
 body.dark-mode {
     transition: background-color .3s ease-in;
     color: var( --kv-foreground-white-color-61 );
-    background-color: var( --kv-dark-theme-background-darksoft );
+    background-color: var( --kv-dark-theme-background-darkest );
 
     .HeaderLinksClass {
         background-color: var( --kv-dark-theme-background-darkmid );
@@ -255,7 +255,7 @@ body.dark-mode {
     }
 
     h1, h2, h3, b, strong {
-        color: var( --kv-primary-accent-color-light );
+        color: var( --kv-secondary-accent-color-darkest-75 );
     }
 
     
@@ -267,6 +267,7 @@ body.dark-mode {
 
     #ClarksId {
         color: var( --kv-secondary-accent-color-darkmid );
+        text-shadow: 0px 0px 10px var( --kv-secondary-accent-color-darkmid );
     }
 
     footer {
