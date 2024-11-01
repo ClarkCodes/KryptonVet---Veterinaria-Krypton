@@ -14,7 +14,7 @@
     --kryptonvet-foreground-light-color: #ffad7b;
 
 
-    --kv-dark-theme-background-darkest : #22042F;
+    --kv-dark-theme-background-darkest : rgb(18, 0, 20);
     --kv-dark-theme-background-darkmid : #2F0D04;
     --kv-dark-theme-background-darksoft : #102F04;
     --kv-dark-theme-foreground-darkest : #a3a3a3;
@@ -47,6 +47,7 @@
     --kv-primary-accent-color-light : orange;
     --kv-primary-accent-color-lesslight : darkorange;
     --kv-primary-accent-color-lightless : orangered;
+    --kv-secondary-accent-color-darkest-75 : rgb(241, 227, 125, .75);
     --kv-secondary-accent-color-darkest : #F1E37D;
     --kv-secondary-accent-color-darkmid : #FAF5D0;
     --kv-thirdy-accent-color-darkest : #151C65;
