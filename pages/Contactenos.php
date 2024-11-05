@@ -152,7 +152,7 @@
                             } 
                             else 
                             {
-
+                                echo "<script>alert( 'Datos Enviados Exitosamente.' );</script>";
                                 echo "<h2 class=\"SuccessfulConfirmationTitle\">DATOS ENVIADOS</h2>";
                                 echo "
                                     <p>Estimado Cliente, muchas gracias por enviarnos su solicitud, nos contactarémos con usted a la brevedad posible. Estos son los datos enviados.</p>
