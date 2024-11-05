@@ -1,3 +1,5 @@
+/* Estilos del Reproductor de Musica Personalizado - Desarrollado por ClarkCodes entre el 1 y el 5 de Noviembre del 2024, se termino de refinar a las 16:35 */
+
 @import url( "baseCommonStyles.css" );
 
 * { 
@@ -66,11 +68,11 @@ h3 {
         flex-direction: column;
         align-items: start;
         padding-inline: 0vw;
-        margin-top: 20vh;
+        margin-top: 52px;
         width: 84%;
 
         h2, h3 {
-            line-height: 9pt;
+            line-height: 10pt;
             margin-top: 0vh;
         }
 
@@ -84,7 +86,7 @@ h3 {
         justify-content: left;
         align-items: center;
         border-radius: 5px;
-        margin-top: 3vh;
+        margin-top: 5px;
         width: 84%;
         height: 1px;
 
@@ -125,7 +127,7 @@ h3 {
         display: flex;
         justify-content: center;
         margin-bottom: 1vh;
-        margin-top: 19vh;
+        margin-top: 49px;
         width: 84%;
 
         img {

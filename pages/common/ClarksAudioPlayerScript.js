@@ -1,4 +1,4 @@
-// Author: ClarkCodes - Reproductor de Musica creado entre el 1 y el 5 de Noviembre del 2024, se empezo a las 5pm y se termino a las 6am
+// Author: ClarkCodes - Script del Reproductor de Musica Personalizado - Desarrollado por ClarkCodes entre el 1 y el 5 de Noviembre del 2024, se empezo a diseñar el 1/11 las 5pm y se culmino el desarrollo el 5/11 a las 6am, se termino de refinar a las 16:35
 
 
 // ****** Declarations
@@ -14,7 +14,7 @@ const playPauseReplayButton = document.querySelector( '#playPauseReplayButtonId'
 const playPauseReplayImage = document.querySelector( '#playPauseReplayButtonId img' );
 const stopButton = document.querySelector( '#stopButtonId' );
 const volumeButton = document.querySelector( '#volumeButtonId' );
-const volumeButtonImage = document.querySelector( '#volumeButtonId img' );
+const volumeImage = document.querySelector( '#volumeButtonId img' );
 const volumeSlider = document.querySelector( '#volumeSliderId' );
 const volumeValue = document.querySelector( '#volumeValueId' );
 
@@ -37,7 +37,7 @@ audio.addEventListener( 'timeupdate', () => updateProgress() );
 audio.addEventListener( 'play', () => updatePlayPauseIcon() );
 audio.addEventListener( 'pause', () => updatePlayPauseIcon() );
 audio.addEventListener( 'ended', () => songEnd() );
-volumeButton.addEventListener( 'click', () => toogleMute() );
+volumeButton.addEventListener( 'click', () => toggleMute() );
 volumeSlider.addEventListener( 'input', () => setVolume() );
 
 
@@ -72,10 +72,6 @@ function togglePlay() {
     }
 }
 
-function updatePlayPauseIcon() {
-    playPauseReplayImage.setAttribute( 'src', ( audio.paused ? playIcon : pauseIcon ) );
-}
-
 function stopSong() {
     if( audio.currentTime > 0 ) {
         audio.pause();
@@ -100,17 +96,17 @@ function songEnd() {
     playPauseReplayImage.setAttribute( 'src', replayIcon );
 }
 
-function toogleMute() {
+function toggleMute() {
     if ( audio.muted ) {
         audio.muted = false;
         const volume = audio.volume * 100;
         volumeSlider.value = volume;
-        volumeButtonImageSetter( volume );
+        updateVolumeIcon( volume );
     }
     else {
         audio.muted = true;
         volumeSlider.value = 0;
-        volumeButtonImage.setAttribute( 'src', mutedIcon );
+        volumeImage.setAttribute( 'src', mutedIcon );
     }
 
     volumeValue.textContent = volumeSlider.value;
@@ -120,13 +116,17 @@ function setVolume() {
     const volume = volumeSlider.value;
     audio.volume = volume / 100;
     volumeValue.textContent = volume;
-    volumeButtonImageSetter( volume );
+    updateVolumeIcon( volume );
     
     if( volume > 0 && audio.muted ) {
         audio.muted = false;
     }
 }
 
-function volumeButtonImageSetter( volume ) {
-    volumeButtonImage.setAttribute( 'src', ( volume >= 50 ) ? highVolumeIcon : lowVolumeIcon );
+function updatePlayPauseIcon() {
+    playPauseReplayImage.setAttribute( 'src', ( audio.paused ? playIcon : pauseIcon ) );
+}
+
+function updateVolumeIcon( volume ) {
+    volumeImage.setAttribute( 'src', ( volume >= 50 ) ? highVolumeIcon : lowVolumeIcon );
 }
