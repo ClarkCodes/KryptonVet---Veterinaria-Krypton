@@ -10,6 +10,7 @@
         <link rel = "stylesheet" type="text/css" href="common/styles.css" />
         <link rel="icon" type="image/x-icon" href="common/icons/FAVICON_KryptonVet.ico">
         <script src="common/themes/themeCode.js"></script>
+        <script src="common/Management.js"></script>
         <title>Contáctenos - KryptonVet</title>
     </head>
     <body>
@@ -97,7 +98,6 @@
 
             <div class="ContentClass">
                 <div class="ContactenosClass">
-                    <br>
                     <h2>CONTÁCTENOS</h2>
                     <p>
                         No dude en comunicarse con nosotros, estaremos siempre dispuestos a atenderlo de la mejor manera,
@@ -113,10 +113,16 @@
                             <label for="txtLastNamesId" >Apellidos *</label><br>
                             <input type="text" id="txtLastNamesId" name="lastNames" placeholder="Escriba sus dos apellidos..." value="<?php if ( !empty( $lastNames ) ) echo htmlspecialchars( $lastNames ); ?>" ><br>
 
-                            <label for="txtPhoneId" id="lblPhoneId">Teléfono *</label>
-                            <label for="txtEmailId" >Correo Electrónico *</label><br>
-                            <input type="tel" pattern="[0-9]*" id="txtPhoneId" name="phone" placeholder="Escriba su número de teléfono..." value="<?php if ( !empty( $phone ) ) echo htmlspecialchars( $phone ); ?>" >
-                            <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="txtEmailId" name="email" placeholder="Escriba su correo electrónico..." value="<?php if ( !empty( $email ) ) echo htmlspecialchars( $email ); ?>" ><br>
+                            <div class="PhoneAndMailClass">
+                                <div id="phoneDivId">
+                                    <label for="txtPhoneId" id="lblPhoneId">Teléfono *</label><br>
+                                    <input type="tel" pattern="[0-9]*" id="txtPhoneId" name="phone" placeholder="Escriba su número de teléfono..." value="<?php if ( !empty( $phone ) ) echo htmlspecialchars( $phone ); ?>" >
+                                </div>
+                                <div id="mailDivId">
+                                    <label for="txtEmailId" >Correo Electrónico *</label><br>
+                                    <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="txtEmailId" name="email" placeholder="Escriba su correo electrónico..." value="<?php if ( !empty( $email ) ) echo htmlspecialchars( $email ); ?>" ><br>
+                                </div>
+                            </div>
 
                             <label for="txtMotivoId" >Motivo de la consulta *</label><br>
                             <input type="text" id="txtMotivoId" name="consultingSubject" placeholder="Describa brevemente el motivo por el cual requiere la consulta..." value="<?php if ( !empty( $consultingSubject ) ) echo htmlspecialchars( $consultingSubject ); ?>" ><br>
@@ -148,7 +154,7 @@
                                 echo "<h2 class=\"UnsuccessfulConfirmationTitle\">Faltó algo...</h2>";
 
                                 foreach ( $errores as $error ) 
-                                    echo "<p style='color:var( --kv-error-color );'>$error</p>";
+                                    echo "<p class=\"ErrorMessageClass\">$error</p>";
                             } 
                             else 
                             {

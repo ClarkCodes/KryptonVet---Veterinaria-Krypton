@@ -9,11 +9,25 @@
         </a>        
     </div>
     <div  class="HeaderLinksClass">
-        <a href="../../index_kryptonVet_FEVM.html" target="_parent">Inicio</a>
-        <a href="../QuienesSomos.html" target="_parent">Quienes Somos</a>
-        <a href="../Productos.html" target="_parent">Productos</a>
-        <a href="../NuestrosServicios.html" target="_parent">Nuestros Servicios</a>
-        <a href="../FarmaciaYTienda.html" target="_parent">Farmacia y Tienda</a>
-        <a href="../Contactenos.php" target="_parent">Contáctenos</a>
+        <a href="../../index_kryptonVet_FEVM.html" target="_parent" data-page="index_kryptonVet_FEVM.html">Inicio</a>
+        <a href="../QuienesSomos.html" target="_parent" data-page="QuienesSomos.html">Quienes Somos</a>
+        <a href="../Productos.html" target="_parent" data-page="Productos.html">Productos</a>
+        <a href="../NuestrosServicios.html" target="_parent" data-page="NuestrosServicios.html">Nuestros Servicios</a>
+        <a href="../FarmaciaYTienda.html" target="_parent" data-page="FarmaciaYTienda.html">Farmacia y Tienda</a>
+        <a href="../Contactenos.php" target="_parent" data-page="Contactenos.php">Contáctenos</a>
     </div>
 </header>
+<script>
+    window.addEventListener( 'message', ( event ) => {
+        const currentPage = event.data;
+        const menuItems = document.querySelectorAll( '.HeaderLinksClass a' );
+
+        menuItems.forEach( item => {
+            item.classList.remove( 'ActivePageMenu' );
+            
+            if ( item.getAttribute( 'data-page' ) === currentPage ) {
+                item.classList.add( 'ActivePageMenu' );
+            }
+        } );
+    } );
+</script>

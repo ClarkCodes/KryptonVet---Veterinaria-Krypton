@@ -63,6 +63,107 @@ h3 {
         height: 40px;
     }
     
+    .ClarkCodesLogoClass {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        height: 52px;
+        width: 84%;
+
+        #clarkCodesLogoImagotypeButtonId {
+            transform: translateX( 15px );
+            border-radius: 50%;
+            transition: transform .3s ease-in-out, filter .65s ease-in-out, background-color .3s ease;
+
+            img {
+                transition: filter .4s ease-in-out;
+            }
+        }
+
+        #clarkCodesLogoTextId {
+            transform: translateX( -10px );
+            opacity: 0;
+            transition: opacity .15s ease, filter .5s ease-out;
+        }
+
+        &:hover {
+            #clarkCodesLogoImagotypeButtonId {
+                background-color: rgba( 0, 0, 0, .8 );
+                opacity: .85;
+
+                /* Media Queries to fix the translateX of the Logo Button when resizing the window and its position stil look ok when animating, making it responsive */
+                @media( max-width: 550px ) {
+                    transform: translateX( -24vw );
+                }
+
+                @media (min-width: 551px) and (max-width: 600px) {
+                    transform: translateX( -22.5vw );
+                }
+
+                @media (min-width: 601px) and (max-width: 700px) {
+                    transform: translateX( -19.5vw );
+                }
+
+                @media (min-width: 701px) and (max-width: 850px) {
+                    transform: translateX( -15.8vw );
+                }
+
+                @media (min-width: 851px) and (max-width: 920px) {
+                    transform: translateX( -14.4vw );
+                }
+
+                @media (min-width: 921px) and (max-width: 1150px) {
+                    transform: translateX( -13.55vw );
+                }
+
+                @media (min-width: 1151px) and (max-width: 1450px) {
+                    transform: translateX( -14.5vw );
+                }
+
+                @media (min-width: 1451px) and (max-width: 1550px) {
+                    transform: translateX( -14.8vw );
+                }
+
+                @media (min-width: 1551px) and (max-width: 1799px) {
+                    transform: translateX( -14.5vw );
+                }
+
+                @media (min-width: 1800px) and (max-width: 1920px) {
+                    transform: translateX( -15vw );
+                }
+
+                @media( min-width: 1921px ) {
+                    transform: translateX( -17vw );
+                }
+                
+                
+                &:hover {
+                    filter: drop-shadow( 0px 0px 7px var( --kv-secondary-accent-color-darkest ) );
+                    transition: filter .2s ease-out;
+                }
+                
+                img {
+                    filter: drop-shadow( 0px 0px 3px var( --kv-secondary-accent-color-darkest ) );
+                    transition: filter .65s ease-in-out;
+                }
+            }
+
+            #clarkCodesLogoTextId {
+                cursor: pointer;
+                scale: 2.1;
+                opacity: 1;
+                transition: scale .25s ease-in-out, opacity .15s ease, filter .4s ease-out;
+
+                &:hover {
+                    filter: drop-shadow( 0px 0px 1.2px var( --kv-secondary-accent-color-darkest ) );
+                    transition: filter .3s ease;
+                }
+            }
+        }
+    }
+
     .BasicInfoClass {
         position: relative;
         flex-direction: column;

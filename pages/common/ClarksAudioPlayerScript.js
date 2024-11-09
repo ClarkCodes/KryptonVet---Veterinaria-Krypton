@@ -5,6 +5,8 @@
 
 let isSeeking = false;
 const audio = document.querySelector( '#audioMagoDeOzSongId' );
+const clarkCodesImagotypeButton = document.querySelector( '#clarkCodesLogoImagotypeButtonId' );
+const clarkCodesLogoTextImage = document.querySelector( '#clarkCodesLogoTextId' );
 const songTitle = document.querySelector( '#titleId' );
 const songArtistAlbum = document.querySelector( '#artistAlbumId' );
 const progressBarSlider = document.querySelector( '#progressBarSliderId' );
@@ -30,7 +32,7 @@ const mutedIcon = 'icons/no_sound_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg';
 
 playPauseReplayButton.addEventListener( 'click', () => togglePlay() );
 stopButton.addEventListener( 'click', () => stopSong() );
-progressBarSlider.addEventListener( 'input', () => { isSeeking = true; } );
+progressBarSlider.addEventListener( 'input', () => seeking() );
 progressBarSlider.addEventListener( 'change', () => seek() );
 audio.addEventListener( 'loadedmetadata', () => loadSongBasics() );
 audio.addEventListener( 'timeupdate', () => updateProgress() );
@@ -39,7 +41,8 @@ audio.addEventListener( 'pause', () => updatePlayPauseIcon() );
 audio.addEventListener( 'ended', () => songEnd() );
 volumeButton.addEventListener( 'click', () => toggleMute() );
 volumeSlider.addEventListener( 'input', () => setVolume() );
-
+clarkCodesImagotypeButton.addEventListener( 'click', () => openClarkCodesGitHubRepositoryLink() );
+clarkCodesLogoTextImage.addEventListener( 'click', () => openClarkCodesGitHubRepositoryLink() );
 
 // ****** Functions
 
@@ -82,14 +85,21 @@ function stopSong() {
 function updateProgress() {
     if ( !isSeeking ) {
         progressBarSlider.value = audio.currentTime | 0;
+        currentTime.textContent = formatToMinSec( audio.currentTime );
+    }
+}
+
+function seeking() {
+    if ( !isSeeking ) { 
+        isSeeking = true; 
     }
 
-    currentTime.textContent = formatToMinSec( audio.currentTime );
+    currentTime.textContent = formatToMinSec( progressBarSlider.value );
 }
 
 function seek() {
-    audio.currentTime = progressBarSlider.value * 1.0;
     isSeeking = false;
+    audio.currentTime = progressBarSlider.value * 1.0;
 }
 
 function songEnd() {
@@ -129,4 +139,8 @@ function updatePlayPauseIcon() {
 
 function updateVolumeIcon( volume ) {
     volumeImage.setAttribute( 'src', ( volume >= 50 ) ? highVolumeIcon : lowVolumeIcon );
+}
+
+function openClarkCodesGitHubRepositoryLink() {
+    window.open('https://github.com/ClarkCodes', '_blank');
 }

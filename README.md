@@ -24,36 +24,62 @@ Para poder realizar este proyecto educativo, hemos tomado inspiración, y en alg
   <img alt="HTML5 Logo" height="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" gap="7vw">
   <img alt="CSS Logo" height="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" gap="7vw">
   <img alt="Javascript Logo" height="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" gap="7vw">
+  <img alt="PHP Logo" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" gap="7vw">
 </p>
 
 <p align="center">
   <a href="https://dev.w3.org/html5/spec-LC/"><img src="https://img.shields.io/badge/HTML-5-E34F26.svg?longCache=true&style=plastic&logo=html5&color=E34F26" alt="HTML5 shield image"></a>
   <a href="https://www.w3schools.com/css/"><img src="https://img.shields.io/badge/CSS-3-1572B6.svg?longCache=true&style=plastic&logo=css3&color=1572B6" alt="CSS shield image"></a>
   <a href="https://www.w3schools.com/js/default.asp/"><img src="https://img.shields.io/badge/Javascript--F7DF1E.svg?longCache=true&style=plastic&logo=JavaScript&color=F7DF1E" alt="JavaScript shield image"></a>
+  <a href="https://www.php.net/manual/es/intro-whatis.php"><img src="https://img.shields.io/badge/PHP-8.10.13-777BB4.svg?longCache=true&style=plastic&logo=PHP&color=777BB4" alt="PHP shield image"></a>
 </p>
 
-## Estado del Proyecto
+# Estado del Proyecto
 Se está trabajando en el proyecto, practicando y haciendo cambios constantes al menos por el siguiente mes de julio del 2024, luego de esto puede que se sigan haciendo cambios a modo de prueba y experimentación de manera más esporádica, de todas maneras, el proyecto sirve a modo de ejemplo en cuanto a cómo poder hacer alguna cosa o la otra en html y css que este incluya, cualquiera que se interese puede ver el código, ver como está hecho y poder hacerlo también en sus proyectos.
 
 En cada iteración que hacemos, exploramos opciones y vamos poco a poco mejorando y refinando el frontend, el sitio actualmente cuenta con: 
 
-### Navegación entre múltiples páginas
+## Navegación entre múltiples páginas
 <p align="center">
     <img src="https://github.com/user-attachments/assets/5d2e5cb8-7292-476f-a898-39fde535b95b" alt="Imágen: Navegación entre páginas - Página de Quienes Somos de KryptonVet"/>
 </p>
 
-### Formulario de Contáctenos
+## Formulario de Contáctenos
+Con este formulario te pondrás en contacto con nuestro equipo para solicitar servicios.
+
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/a47c7521-6d5f-4fd6-9ee8-f7c8f79a6c58" alt="Imágen: Formulario de Contáctenos de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/32ed9426-01a1-40d0-ac21-f27da551cd4d" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet"/>
 </p>
 
-### Tema Claro y Oscuro con detección de Preferencia del Sistema
+Cuenta con validación de campos mediante PHP para asegurar que se ha ingresado la información correspondiente y mediante expresiones regulares con html para asegurar que los campos como el correo electrónico tienen el formato correcto.
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/8f1deabe-66de-4713-a3cb-8dcbe9c53a48" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet"/>
+</p>
+
+Una vez que se ingresa la información correctamente se envian los datos y se muestra un mensaje de confirmación para informar al usuario adecuadamente, siguiendo los principios de Nielsen en cuanto a diseño de experiencia del usuario (UX Design), y proveer una experiencia adecuada.
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a506d564-890a-4774-8e09-73cbee7bef2f" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet"/>
+</p>
+
+## Tema Claro y Oscuro con detección de Preferencia del Sistema
 <p align="center">
     <img src="https://github.com/user-attachments/assets/7ab6c3b1-6d0c-4e97-847e-e7a79ed0355c" alt="Imágen: Apariencia de Tema Claro en Cabecera con Logo y Menú de Navegación de KryptonVet"/>
     <img src="https://github.com/user-attachments/assets/c18cb32e-d437-4926-ab2c-7caa4da1a334" alt="Imágen: Apariencia de Tema Oscuro en Cabecera con Logo y Menú de Navegación de KryptonVet"/>
     <img src="https://github.com/user-attachments/assets/65e9e9ce-d778-4dd9-a3db-44f3d9369739" alt="Imágen: Apariencia de Tema Claro en Pié de Página con Logo y Links adicionales de información"/>
     <img src="https://github.com/user-attachments/assets/f83c0b83-a20c-4bf0-a028-50237792ee63" alt="Imágen: Apariencia de Tema Oscuro en Pié de Página con Logo y Links adicionales de información"/>
 </p>
+
+## Reproductor de Audio 
+Un Reproductor de Audio y Música 100% personalizado y funcional, creado desde 0 con tecnologías web, para una experiencia agradable al escuchar audios en el sitio web, no más skin por defecto del reproductor de audio, ahora está disponible Clark's Music Player.
+
+Su aspecto moderno le permite lucir bien tanto en el tema claro como en el oscuro, sobrio y elegante, da gusto escuchar música en él.
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/e8cd473f-6e12-49f5-8d2e-24b65cdbe8b4" width="494px" alt="ClarksMusicPlayer en Tema Claro"/><br>
+    <img src="https://github.com/user-attachments/assets/00882931-7069-4140-9a6c-ffaa7bd9eac6" width="500px" alt="ClarksMusicPlayer en Tema Oscuro"/>
+</p>
+Disfruta de Clark's Music Player, hecho con amor y pasión por la programación, el desarrollo de software y la tecnología.
 
 ### Y un mensaje de agradecimiento
 <p align="center">
@@ -63,6 +89,7 @@ En cada iteración que hacemos, exploramos opciones y vamos poco a poco mejorand
 ## Datos acerca de KryptonVet
 * El logo se creó utilizando IA, se usó Miscrosoft Copilot, la cual usó internamente DALL-E 3 para crear el logo, luego se lo refinó y se diseño manualmente la parte textual usando GIMP, componiento un imagotipo, el cual es el logo actual.
 * Las imágenes en algunos casos también fueron refinadas y editadas para un mejor aspecto, más adecuado y un acabado más profesional.
+* Actualmente se usa el Reproductor Clark's Music Player para reproducir audios. Este reproductor es independiente de este ptoyecto, pero nació como una idea parte de él para ser usado como una skin personalizada para reproducir audios y así no usar la triste y ultra simple skin por defecto, y luego se separó, aunque se utiliza en el sitio. Para crear este reproductor se tomaron 4 días, se uso Microsoft Copilot Chat como herramienta de IA para acelerar el desarrollo, lo cual junto a la investigación clásica y la experiencia del desarrollador dieron muy buenos resultados.
 
 ##
 ##
