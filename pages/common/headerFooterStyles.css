@@ -59,6 +59,14 @@ header {
     display: block;
 }
 
+.ActivePageMenu { /* Style for the selected menu 'a link' based on current page  */
+    color: var( --kv-secondary-accent-color-darkest );
+    border-bottom: 5px solid var( --kv-primary-accent-color-darkmid );
+    font-weight: bold;
+    text-shadow: 2px 2px 3px var( --kv-primary-accent-color-darkmid );
+    transition: color .2s ease-in, text-shadow .2s ease; /* Smooth transition on hover */
+}
+
 
 /* Footer Section */
 

@@ -2,35 +2,6 @@
 let isThemeDark = false;
 const storageKey = 'theme-preference';
 
-const onChange = () => {
-    theme.value = theme.value === 'light' ? 'dark' : 'light';
-    setPreference();
-}
-
-const updateThemeIndicator = ( themeValue ) => {
-    isThemeDark = themeValue === 'dark';
-}
-
-const getColorPreference = () => {
-    let themePreference = localStorage.getItem( storageKey );
-
-    if ( themePreference === null )
-        themePreference = window.matchMedia( '( prefers-color-scheme: dark )' ).matches ? 'dark' : 'light';
-
-    updateThemeIndicator( themePreference );
-    return themePreference;
-}
-
-const theme = {
-    value: getColorPreference(),
-}
-
-const setPreference = () => {
-    localStorage.setItem( storageKey, theme.value );
-    updateThemeIndicator( theme.value );
-    reflectPreference();
-}
-
 const reflectPreference = () => {
     if ( isThemeDark && !document.body.classList.contains( 'dark-mode' ) )
     {
@@ -52,6 +23,35 @@ const reflectPreference = () => {
     }
 
     document.querySelector( '#theme-checkbox' )?.setAttribute( 'aria-label', theme.value );
+}
+
+const updateThemeIndicator = ( themeValue ) => {
+    isThemeDark = themeValue === 'dark';
+}
+
+const setPreference = () => {
+    localStorage.setItem( storageKey, theme.value );
+    updateThemeIndicator( theme.value );
+    reflectPreference();
+}
+
+const onChange = () => {
+    theme.value = theme.value === 'light' ? 'dark' : 'light';
+    setPreference();
+}
+
+const getColorPreference = () => {
+    let themePreference = localStorage.getItem( storageKey );
+
+    if ( themePreference === null )
+        themePreference = window.matchMedia( '( prefers-color-scheme: dark )' ).matches ? 'dark' : 'light';
+
+    updateThemeIndicator( themePreference );
+    return themePreference;
+}
+
+const theme = {
+    value: getColorPreference(),
 }
 
 window.onload = () => {
