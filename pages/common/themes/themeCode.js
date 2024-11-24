@@ -1,28 +1,23 @@
 // Light/Dark Theme Toogling Script
 let isThemeDark = false;
 const storageKey = 'theme-preference';
+const ariaLabel = document.querySelector( '#theme-checkbox' );
 
 const reflectPreference = () => {
-    if ( isThemeDark && !document.body.classList.contains( 'dark-mode' ) )
-    {
-        document.body.classList.toggle('dark-mode');
-        
-        if( !document.querySelector( '#theme-checkbox' ).checked )
-        {
+    if ( isThemeDark && !document.body.classList.contains( 'dark-mode' ) ) {
+        if( !document.querySelector( '#theme-checkbox' ).checked ) {
             document.querySelector( '#theme-checkbox' ).checked = true;
         }
     }
-    else if ( !isThemeDark && document.body.classList.contains( 'dark-mode' ) )
-    {
-        document.body.classList.toggle('dark-mode');
-        
-        if( document.querySelector( '#theme-checkbox' ).checked )
-        {
+    else if ( !isThemeDark && document.body.classList.contains( 'dark-mode' ) ) {   
+        if( document.querySelector( '#theme-checkbox' ).checked ) {
             document.querySelector( '#theme-checkbox' ).checked = false;
         }
     }
 
-    document.querySelector( '#theme-checkbox' )?.setAttribute( 'aria-label', theme.value );
+    document.body.classList.toggle( 'dark-mode' );    
+    document.querySelector( '.FooterIFrameClass' ).contentDocument?.body.classList.toggle( 'dark-mode' );
+    ariaLabel?.setAttribute( 'aria-label', theme.value );
 }
 
 const updateThemeIndicator = ( themeValue ) => {

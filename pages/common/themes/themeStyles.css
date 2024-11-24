@@ -3,8 +3,8 @@
 
 .theme-switch-wrapper {
     position: absolute;
-    top: 2.5%;
-    margin-left: 3%;
+    top: 20px;
+    left: 7%;
     width: auto;
     display: flex;
     align-items: center;
@@ -46,10 +46,6 @@
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     outline-offset: 5px;
-
-    @media (hover: none) {
-        --size: 48px;
-    }
 }
 
 .slider:before {
@@ -96,8 +92,7 @@ body {
         font-family:'EncodeSans';
         padding-bottom: 15px;
         
-        &:hover{
-            /*background-color: var( --kv-thirdy-accent-color-darkest );*/
+        &:hover { /* This same styles are in Management.js for the active menu pointing to the current page, both must be the same */
             color: var( --kv-secondary-accent-color-darkest );
             border-bottom: 5px solid var( --kv-primary-accent-color-darkmid );
             font-weight: bold;
@@ -155,6 +150,7 @@ body {
     }
 
     footer {
+        transition: background-color .3s ease-in-out;
         background-color: var( --kryptonvet-foreground-light-color );
 
         address, a {
@@ -162,6 +158,10 @@ body {
             font-weight: bold;
             color: var( --kv-light-theme-foreground-lightest-70 );
         }
+
+        #addressIconId {
+            filter: var( --kv-svg-filter );
+        }    
 
         #copyrightSignDivId {
             strong {
@@ -203,11 +203,11 @@ body {
         transition: transform .5s var( --ease-elastic-3 );
     }
 
-    & > :is(.moon, .sun, .sun-beams) {
+    & > :is( .moon, .sun, .sun-beams ) {
         transform-origin: center center;
     }
   
-    & > :is(.moon, .sun) {
+    & > :is( .moon, .sun ) {
         fill: var( --dark-theme-accent-color );
     }
   
@@ -233,7 +233,7 @@ body.dark-mode {
     background-color: var( --kv-dark-theme-background-darkest );
 
     .HeaderLinksClass {
-        background-color: var( --kv-dark-theme-background-darkmid );
+        background-color: orange;
     }
 
     .MainMenuClass li a {
@@ -271,10 +271,15 @@ body.dark-mode {
     }
 
     footer {
-        background-color: var( --kv-thirdy-accent-color-darkest );
-
+        transition: background-color .3s ease-in-out;
+        background-color: var( --kv-dark-theme-footer-background );
+    
         address, a {
-            color: var( --kv-foreground-white-color-81 );
+            color: var( --kv-foreground-white-color-51 );
+        }
+    
+        #addressIconId {
+            filter: var( --kv-svg-dark-theme-filter );
         }
 
         #copyrightSignDivId {
@@ -283,22 +288,13 @@ body.dark-mode {
             }
     
             h7 {
-                color: var( --kv-foreground-black-color-61 );
-            }
-        }
-
-        .TextLinksClass {
-            transition: color .1s ease, text-shadow .1s ease-out;
-    
-            &:hover { 
-                transition: color .1s ease, text-shadow .11s ease-in;
-                color: var( --kv-foreground-white-color-91 );
+                color: var( --kv-foreground-black-color-31 );
             }
         }
     }
 
     .sun-and-moon {  
-        transform: translateX( 1.96vw );
+        transform: translateX( 38px );
 
         .sun {
             transform: scale( 1.75 );

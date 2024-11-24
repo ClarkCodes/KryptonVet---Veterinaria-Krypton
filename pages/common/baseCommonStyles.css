@@ -1,4 +1,7 @@
 :root {
+    
+    /* Theme Colors */
+
     --dark-theme-background-color: #222222;
     --dark-theme-foreground-color: #F7F1FF;
     --dark-theme-accent-color: #FAF5D0;
@@ -12,11 +15,12 @@
     --kryptonvet-button-hover-color: #fc8217;
     --kryptonvet-button-pressed-color: #a5540d;
     --kryptonvet-foreground-light-color: #ffad7b;
+    
 
-
-    --kv-dark-theme-background-darkest : rgb(18, 0, 20);
-    --kv-dark-theme-background-darkmid : #2F0D04;
-    --kv-dark-theme-background-darksoft : #102F04;
+    --kv-dark-theme-background-darkest : rgba( 18, 0, 20, .89 );
+    --kv-dark-theme-background-darkmid : rgba(47, 13, 4, .5 );
+    --kv-dark-theme-background-darksoft : rgba(16, 47, 4, .3 );
+    --kv-dark-theme-footer-background : rgba( 255, 255, 255, .13 );
     --kv-dark-theme-foreground-darkest : #a3a3a3;
     --kv-dark-theme-foreground-darkmid : #CCCCCC;
     --kv-dark-theme-foreground-darksoft : #F5F5F5;
@@ -55,7 +59,19 @@
 
     --kv-success-color : #00E676;
     --kv-error-color : #B00020;
+
+    
+    /* SVG Filter Colors */
+
+    --kv-svg-filter: brightness(0) saturate(100%) invert(18%) sepia(54%) saturate(1221%) hue-rotate(203deg) brightness(86%) contrast(113%);
+    --kv-svg-dark-theme-filter: brightness(0) saturate(100%) invert(89%) sepia(23%) saturate(780%) hue-rotate(3deg) brightness(100%) contrast(94%);
+
+    /* Numeric and Measure Constants */
+
+    /* --MAX-WIDTH-FOOTER-: 1693px; TODO: PENDIENTE DE PONER LAS CONSTANTES NUMERICAS */
 }
+
+/* Fonts */
 
 @font-face {
     font-family: 'Urbanist';

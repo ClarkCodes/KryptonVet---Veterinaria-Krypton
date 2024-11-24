@@ -37,9 +37,7 @@
                 </svg>
             </label>
         </div>
-        <div class="DivHeaderClass">
-            <iframe class="HeaderIFrameClass" src="common/header.html" scrolling = "no" title="HeaderFrame"></iframe>
-        </div>
+        <iframe class="HeaderIFrameClass" src="common/header.html" scrolling = "no" title="HeaderFrame"></iframe>
         <main>
 
             <?php 
@@ -176,8 +174,6 @@
 
         </main>
         <br>
-        <div class="DivFooterClass">
-            <iframe class="FooterIFrameClass" src="common/footer.html" scrolling = "no" title="FooterFrame"></iframe>
-        </div>
+        <iframe class="FooterIFrameClass" src="common/footer.html" scrolling = "no" title="FooterFrame"></iframe>
     </body>
 </html>
