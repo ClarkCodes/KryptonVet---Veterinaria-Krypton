@@ -2,7 +2,7 @@
 Sitio Web de la Clínica Veterinaria Krypton.
 ###
 <p align="center">
-  <img src="https://github.com/ClarkCodes/KryptonVet---Veterinaria-Krypton/blob/15be3d082dfdc8127809b686151cb0a398e53178/pages/common/images/KryptonVet_Logo_Imagotipo_Remasterizado_1024x1024.png" width="300" />
+  <img src="https://github.com/ClarkCodes/KryptonVet---Veterinaria-Krypton/blob/7796a60439284c7c15c847f62c50255035971e7a/pages/common/images/KryptonVet_Logo_Remasterizado_714x770.webp" width="250" />
 </p>
 
 ## Aclaración - Disclaimer: 
@@ -41,34 +41,35 @@ En cada iteración que hacemos, exploramos opciones y vamos poco a poco mejorand
 
 ## Navegación entre múltiples páginas
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/5d2e5cb8-7292-476f-a898-39fde535b95b" alt="Imágen: Navegación entre páginas - Página de Quienes Somos de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/64d59b58-ad37-4ccb-aee8-b7e54bb72866" alt="Imágen: Navegación entre páginas - Página de Inicio de KryptonVet" width="1000" />
+    <img src="https://github.com/user-attachments/assets/5707ca70-e052-413d-aa25-2412335f59a1" alt="Imágen: Navegación entre páginas - Página de Quienes Somos de KryptonVet" width="1000" />
 </p>
 
 ## Formulario de Contáctenos
 Con este formulario te pondrás en contacto con nuestro equipo para solicitar servicios.
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/32ed9426-01a1-40d0-ac21-f27da551cd4d" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/32ed9426-01a1-40d0-ac21-f27da551cd4d" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet" width="1000" />
 </p>
 
 Cuenta con validación de campos mediante PHP para asegurar que se ha ingresado la información correspondiente y mediante expresiones regulares con html para asegurar que los campos como el correo electrónico tienen el formato correcto.
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/8f1deabe-66de-4713-a3cb-8dcbe9c53a48" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/8f1deabe-66de-4713-a3cb-8dcbe9c53a48" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet" width="1000" />
 </p>
 
 Una vez que se ingresa la información correctamente se envian los datos y se muestra un mensaje de confirmación para informar al usuario adecuadamente, siguiendo los principios de Nielsen en cuanto a diseño de experiencia del usuario (UX Design), y proveer una experiencia adecuada.
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/a506d564-890a-4774-8e09-73cbee7bef2f" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet"/>
+    <img src="https://github.com/user-attachments/assets/a506d564-890a-4774-8e09-73cbee7bef2f" alt="Imágen: Formulario de Contáctenos vacío de KryptonVet" width="1000" />
 </p>
 
 ## Tema Claro y Oscuro con detección de Preferencia del Sistema
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/7ab6c3b1-6d0c-4e97-847e-e7a79ed0355c" alt="Imágen: Apariencia de Tema Claro en Cabecera con Logo y Menú de Navegación de KryptonVet"/>
-    <img src="https://github.com/user-attachments/assets/c18cb32e-d437-4926-ab2c-7caa4da1a334" alt="Imágen: Apariencia de Tema Oscuro en Cabecera con Logo y Menú de Navegación de KryptonVet"/>
-    <img src="https://github.com/user-attachments/assets/65e9e9ce-d778-4dd9-a3db-44f3d9369739" alt="Imágen: Apariencia de Tema Claro en Pié de Página con Logo y Links adicionales de información"/>
-    <img src="https://github.com/user-attachments/assets/f83c0b83-a20c-4bf0-a028-50237792ee63" alt="Imágen: Apariencia de Tema Oscuro en Pié de Página con Logo y Links adicionales de información"/>
+    <img src="https://github.com/user-attachments/assets/64d59b58-ad37-4ccb-aee8-b7e54bb72866" alt="Imágen: Apariencia de Tema Claro en Cabecera con Logo y Menú de Navegación de KryptonVet" width="1000" />
+    <img src="https://github.com/user-attachments/assets/6f111374-9076-4019-8278-bc82ea6f88d4" alt="Imágen: Apariencia de Tema Oscuro en Cabecera con Logo y Menú de Navegación de KryptonVet" width="1000" />
+    <img src="https://github.com/user-attachments/assets/6674aeb9-6129-48bc-ab02-ea43066fd0f2" alt="Imágen: Apariencia de Tema Claro en Pié de Página con Logo y Links adicionales de información" width="1000" />
+    <img src="https://github.com/user-attachments/assets/91a5263b-9a6c-4c3f-8ff2-6f9c70071c6c" alt="Imágen: Apariencia de Tema Oscuro en Pié de Página con Logo y Links adicionales de información" width="1000" />
 </p>
 
 ## Reproductor de Audio 
@@ -80,6 +81,18 @@ Su aspecto moderno le permite lucir bien tanto en el tema claro como en el oscur
     <img src="https://github.com/user-attachments/assets/00882931-7069-4140-9a6c-ffaa7bd9eac6" width="500px" alt="ClarksMusicPlayer en Tema Oscuro"/>
 </p>
 Disfruta de Clark's Music Player, hecho con amor y pasión por la programación, el desarrollo de software y la tecnología.
+
+## Sitio ahora más Responsive
+Ahora el sitio es más responsive y está preparado para mostrar el contenido en diferentes anchos, adapta su distribución y distancias según el ancho del navegador y del disposiitivo, consiguiendo seguirse leyendo y viendo adecuadamente.
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/876b8013-1ab5-4824-b194-efb5eaa6bf04" width="400px" alt="Captura de Header Responsive con ancho reducido"/>
+    <img src="https://github.com/user-attachments/assets/115696ad-9f4b-4096-a668-5b4824ef3c37" width="400px" alt="Captura Contenido Responsive con ancho reducido"/>
+</p>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a4687f02-241c-4ee5-a02b-da2589850d2f" width="400px" alt="Captura de Footer Responsive con ancho reducido parte superior"/>
+    <img src="https://github.com/user-attachments/assets/d3e45173-1c6c-4415-8c56-a63cf2b00c8d" width="400px" alt="Captura de Footer Responsive con ancho reducido parte inferior"/>
+</p>
 
 ### Y un mensaje de agradecimiento
 <p align="center">
