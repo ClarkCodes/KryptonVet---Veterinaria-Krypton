@@ -7,59 +7,74 @@
 
 /* Header Section */
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .HeaderLogoBannerDivClass::before {
     position: absolute;
-    z-index: -2;
+    z-index: -4;
     content: "";
     width: 100%;
     height: 130%;
-    background-image: url( "images/HeaderBackgroundBanner_KryptonVet.png" );
+    background-image: url( "images/HeaderBackgroundBanner_KryptonVet.webp" );
     background-position: sticky;
     background-size: contain;
+    background-color: transparent;
     filter: blur( 20px ) brightness( .7 );
+
+    @media( max-width: 1217px ) {
+        height: 950px;
+    }
 }
 
 .HeaderLogoBannerDivClass {
     position: relative;
-    z-index: -1;
-    margin-left: -.4%;
-    margin-right: -.4%;
-    padding-bottom: 2%;
-    display: grid;
-    place-items: center;
+    margin-inline: -.4%;
+    display: flex;
+    justify-content: center;
     height: fit-content;
-    
-    img {
-        cursor: pointer;
+    background-color: transparent;
+
+    a {
+        padding-top: 7vh;
+
+        img {
+            cursor: pointer;
+        }
     }
 }
 
 .HeaderLinksClass {
-    z-index: 0;
-    left: 0;
-    right: 0;
-    margin-left: -3.1%; 
-    margin-right: -3%;
-    margin-top: -12vh;
-    height: 15px;
+    z-index: 3;
+    height: fit-content;
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     a {
         text-decoration: none;
         padding-inline: 2vw;
+        height: fit-content;
+    }
+
+    @media( max-width: 1217px ) {
+        flex-direction: column;
+        justify-content: center;
+        
+        a {
+            padding-top: 40px;
+            width: fit-content;
+            margin-inline: auto;
+        }
     }
 }
 
-#headerKryptonVetLogoLinkId {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-header {
-    text-align: center;
-    display: block;
-}
-
-.ActivePageMenu { /* Style for the selected menu 'a link' based on current page  */
+.ActivePageMenu { /* Style for the selected menu 'a link' based on current page, this style exist also in the theme script to hover on menus, this and that one must match and be the same  */
     color: var( --kv-secondary-accent-color-darkest );
     border-bottom: 5px solid var( --kv-primary-accent-color-darkmid );
     font-weight: bold;
@@ -70,122 +85,144 @@ header {
 
 /* Footer Section */
 
-#footerMainSectionDivId {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.SocialLinks {
-    display: block;
-}
-
 footer {
-    margin-left: -2.1%;
-    margin-right: -2%;
-    margin-top: -.41%;
+    margin-left: -.5%;
+    margin-top: -.5%;
+    width: 101.4%;
+    height: 398px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    @media( max-width: 1678px ) {
+        height: 100%;
+        
+        div {
+            margin-left: 2%;
+        }
+
+        #footerKryptonVetLogoDivId {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     div {
         padding-top: 2vh;
-        padding-inline: 1.2vw;
+        padding-inline: 1.1vw;
     }
-
-    #footerMainSectionDivId {
-        margin-top: 0%;
-    }
-
+    
     h3 {
         color: var( --kv-thirdy-accent-color-darkest );
     }
 
-    address, a {
-        font-size: 13pt;
-        line-height: 30pt;
-        font-style: normal;
-        letter-spacing: .4pt;
-    }
+    #footerMainSectionDivId {
+        margin-top: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 97.5%;
 
-    #contactenosAddressId {
-        padding-left: 1.5vw;
-    }
-
-    #addressIconId {
-        position: absolute;
-        margin-top: 1.94vh;
-        margin-left: -1.5vw;
-        filter: brightness(0) saturate(100%) invert(18%) sepia(54%) saturate(1221%) hue-rotate(203deg) brightness(86%) contrast(113%);
-    }
-
-    #footerKryptonVetLogoDivId {
-        margin-inline: 0;
-        padding-inline: 0;
-    }
-
-    #footerKryptonVetLogoLinkId {
-        margin-inline: 0;
-        padding-inline: 0;
-    }
-
-    #socialsAndFreepikDivId {
-        padding-right: 0;
-        width: fit-content;
-    }
-
-    #socialsLinksDivId, #freepikDivId {
-        padding-top: 0;
-        width: fit-content;
-    }
-
-    #socialLinksNavId {
-        padding-top: 0;
-        padding-inline: 0;
-        padding-bottom: 0;
-        margin-left: -3vw;
-        margin-top: -3vh;
-        height: 15vh;
-        width: fit-content;
-    }
-
-    #FreepikLogoId {
-        margin-top: 2vh;
-        margin-left: .5vw;
-    }
-
-    #FCMFLogoImgId {
-        position: absolute;
-        margin-left: 20.9vw;
-        margin-top: -6vh;
-        height: 65px;
-    }
-
-    #UGLogoImgId {
-        position: absolute;
-        margin-left: 0vw;
-        margin-top: -12vh;
-        height: 50px;
-    }
-
-    #CSLogoImgId {
-        position: absolute;
-        margin-left: -34.5vw;
-        margin-top: 3vh;
-        height: 55px;
-        opacity: 0.7;
-    }
-
-    #socialLinksNavId, #freepikDivId {
-        display: grid;
-
-        li {
-            display: inline;
+        @media( max-width: 1678px ) {
+            width: 95%;
+            flex-flow: column;
+            justify-content: center;
+            padding-right: 50%;
+            height: 100%;
         }
 
         a {
-            padding-inline: 1.53vw;
+            font-size: 13pt;
+            line-height: 30pt;
+            font-style: normal;
+            letter-spacing: .4pt;
+        }
 
+        #footerKryptonVetLogoDivId, #footerKryptonVetLogoLinkId {
+            margin-inline: 0;
+            padding-inline: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        #contactenosAddressDivId {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            padding-top: 0;
+            padding-left: 0;
+
+            div { 
+                display: flex;
+                flex-direction: row;
+                margin-inline: 0;
+                padding-top: 0;
+                padding-inline: 0;
+            }
+
+            address, a, img {
+                margin-inline: 0;
+                font-size: 13pt;
+                line-height: 30pt;
+                font-style: normal;
+                letter-spacing: .4pt;
+            }
+
+            address {
+                padding-left: 10px;
+            }
+        }
+
+        #socialsAndFreepikDivId {
+            width: fit-content;
+            
+            @media( max-width: 1678px ) {
+                width: 93.5%;
+
+                div {
+                    width: 100%;
+                    margin-inline: 0;
+                    padding-inline: 0;
+                }
+            }
+
+            #socialsLinksDivId {
+                padding-top: 0;
+                width: fit-content;
+                
+                @media( max-width: 1678px ) {
+                    width: 100%;
+                }
+
+                #socialLinksNavId {
+                    width: 100%;
+                    
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        list-style: none;
+                        padding-top: 2vh;
+                        padding-inline: 0;
+                    }
+                }
+            }
+                
+            #freepikDivId {
+                padding-top: 0;
+
+                #freepikLinksDivId {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    #socialLinksNavId, #freepikLinksDivId {
+        a {
             img {
                 opacity: 0.8;
                 transition: scale .1s ease, opacity .1s ease, filter .2s ease-out;
@@ -202,26 +239,120 @@ footer {
         }
     }
 
-    #freepikDivId {
-        width: 90%;
-        
-        a { 
-            width: fit-content;
-            margin-inline: auto;
-        }
-    }
-
-    #copyrightSignDivId {
+    #copyrightSectionDivId {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        width: 100vw;
-        
-        h7, strong {
-            font-size: 12pt;
+        width: 97.5%;
+
+        @media( max-width: 1678px ) {
+            width: 95%;
+            flex-flow: column;
+            justify-content: center;
         }
 
-        h7 {
-            line-height: 40pt;
+        div {
+            margin-left: 0;
         }
 
+        #copyrightLeftDivId {
+            display: flex;
+            align-content: start;
+            justify-content: left;
+            width: 24.5%;
+            padding-top: 0;
+
+            @media( max-width: 1678px ) {
+                width: auto;
+                justify-content: center;
+            }
+
+            #CSLogoImgId {
+                margin-left: 0vw;
+                margin-top: 0vh;
+                height: 55px;
+            }
+        }
+
+        #copyrightCenterDivId {
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media( max-width: 1678px ) {
+                width: auto;
+            }
+
+            #copyrightCenterMainDivId {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-top: 0;
+
+                #UGLogoDivId {
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+    
+                    #UGLogoImgId {
+                        margin-left: 0vw;
+                        margin-top: 0vh;
+                        height: 50px;
+                        align-self: center;
+                    }
+                }
+    
+                #UniFaTextDivId {
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    height: fit-content;
+                    padding-inline: 2vw;
+                    line-height: 24pt;
+                    strong {
+                        font-size: 12pt;
+                    }
+                }
+    
+                #FacultadLogoDivId {
+                    width: 87.5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    #FCMFLogoImgId {
+                        margin-left: 0vw;
+                        margin-top: 0vh;
+                        height: 65px;
+                    }
+                }
+            }
+
+            #copyrightLegendDivId {
+                height: 30px;
+                width: 100%;
+                padding-top: 0;
+                
+                @media( max-width: 1678px ) {
+                    width: 75%;
+                }
+
+                h7 {
+                    font-size: 10pt;
+                }
+            }
+        }
+
+        #copyrightRightDivId {
+            width: 24.5%;
+
+            @media( max-width: 1678px ) {
+                width: auto;
+            }
+        }
     }
 }

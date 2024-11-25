@@ -3,50 +3,50 @@
 
 * { 
     font-size: 16pt;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.DivHeaderClass {
-    position: relative;
-    display: flex;
-    height: fit-content;
-    width: 100vw;
-    margin-top: -1.71vh;
-    margin-left: -3%;
-    margin-right: -3%;
-    padding-left: 0%;
-    padding-right: 0%;
+    margin-inline: 1%;
 }
 
 .HeaderIFrameClass {
-    width: 100%;
+    position: sticky;
+    width: 106%;
     height: 18rem;
+    overflow: hidden;
+    margin-top: -.5%;
+    margin-left: -2.8%;
     border: none;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0%;
-}
+    -webkit-mask-image: -webkit-linear-gradient( white 90%, transparent );
+    mask-image: linear-gradient( white 90%, transparent );
+    background-color: orange;
 
-.DivFooterClass {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    width: 99.08vw;
-    margin-left: -2%;
-    margin-right: -50%;
-    padding-bottom: -20vh;
+    @media( max-width: 1678px ) {
+        margin-top: -1.7%;
+        width: 107%;
+    }
+
+    @media( max-width: 1217px ) {
+        height: 950px;
+    }
 }
 
 .FooterIFrameClass {
     position: bottom;
-    width: 100%;
-    height: 19.3rem;
+    width: 104.1%;
+    height: 18.6rem;
+    margin-left: -2.1%;
+    margin-bottom: -.5%;
     border: none;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: -10vh;
+
+    @media( max-width: 601px ) {
+        height: 1500px;
+    }
+
+    @media (min-width: 602px) and (max-width: 1692px) {
+        height: 1450px;
+    }
+
+    @media (min-width: 1693px) and (max-width: 1728px) {
+        height: 398px;
+    }
 }
 
 h1 {
@@ -83,11 +83,10 @@ p {
 
 .PageDescriptionClass, .MissionClass, .ThanksForVisitingClass {
     p, strong, em {
-        margin-left: auto;
-        margin-right: auto;
         width: 70%;
-        font-size: 18pt;
+        margin-inline: auto;
         text-align: center;
+        font-size: 18pt;
     }
 }
 
@@ -173,7 +172,7 @@ p {
     text-transform: capitalize;
 }
 
-img[width="700"] { /* Selecciona la Imagen de la Farmacia que es la que coincide con el valor del atributo de ancho especificado */
+img[width="700"] { /* Se selecciona la Imagen de la Farmacia mediante el valor del atributo de ancho especificado */
     width: 750px;
     height: 1000px;
     border-radius: 50%;
@@ -185,8 +184,7 @@ img[width="700"] { /* Selecciona la Imagen de la Farmacia que es la que coincide
 
 iframe, video {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 button {
@@ -195,7 +193,7 @@ button {
     box-shadow: 0px 0px 12px #EE812250, inset 0px 0px 30px .5px var( --kv-secondary-accent-color-darkest ), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24), inset 0 0 20px var( --kv-secondary-accent-color-darkest );
     /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
     /*box-shadow: inset 0 0 10px var( --kv-secondary-accent-color-darkest ), inset 0 0 20px var( --kv-secondary-accent-color-darkest ), inset 0 0 30px var( --kv-secondary-accent-color-darkest );*/
-    width: 35%;
+    width: fit-content;
     height: 55px;
     padding: 10px 20px;
     margin-top: 4vh;
