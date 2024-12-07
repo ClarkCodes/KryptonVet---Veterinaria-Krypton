@@ -1,7 +1,6 @@
 // Light/Dark Theme Toogling Script
 let isThemeDark = false;
 const storageKey = 'theme-preference';
-const ariaLabel = document.querySelector( '#theme-checkbox' );
 
 const reflectPreference = () => {
     if ( isThemeDark && !document.body.classList.contains( 'dark-mode' ) ) {
@@ -14,10 +13,10 @@ const reflectPreference = () => {
             document.querySelector( '#theme-checkbox' ).checked = false;
         }
     }
-
+   
     document.body.classList.toggle( 'dark-mode' );    
     document.querySelector( '.FooterIFrameClass' ).contentDocument?.body.classList.toggle( 'dark-mode' );
-    ariaLabel?.setAttribute( 'aria-label', theme.value );
+    document.querySelector( '#theme-checkbox' ).setAttribute( 'aria-label', theme.value );
 }
 
 const updateThemeIndicator = ( themeValue ) => {
@@ -40,7 +39,7 @@ const getColorPreference = () => {
 
     if ( themePreference === null )
         themePreference = window.matchMedia( '( prefers-color-scheme: dark )' ).matches ? 'dark' : 'light';
-
+   
     updateThemeIndicator( themePreference );
     return themePreference;
 }
@@ -52,13 +51,13 @@ const theme = {
 window.onload = () => {
     // Set on load so stored preference can be loaded and screen readers can get the latest value on the checkbox
     reflectPreference();
-  
+
     // Now this script can find and listen for the change event on the control
     document.querySelector( '#theme-checkbox' ).addEventListener( 'change', onChange );
 
     // Update on system theme color preference change
-    window.matchMedia( '( prefers-color-scheme: dark )' ).addEventListener( 'change', ( {matches:isDark} ) => {
+    /* window.matchMedia( '( prefers-color-scheme: dark )' ).addEventListener( 'change', ( {matches:isDark} ) => {
         theme.value = isDark ? 'dark' : 'light';
         setPreference()
-    } );
-}
+    } ); */
+} 
