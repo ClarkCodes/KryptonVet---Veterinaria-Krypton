@@ -8,11 +8,11 @@
 
 .HeaderIFrameClass {
     position: sticky;
-    width: 106%;
+    width: 104.15%;
     height: 18rem;
     overflow: hidden;
     margin-top: -.5%;
-    margin-left: -2.8%;
+    margin-left: -2.1%;
     border: none;
     -webkit-mask-image: -webkit-linear-gradient( white 90%, transparent );
     mask-image: linear-gradient( white 90%, transparent );
@@ -36,16 +36,22 @@
     margin-bottom: -.5%;
     border: none;
 
-    @media( max-width: 601px ) {
-        height: 1500px;
-    }
-
-    @media (min-width: 602px) and (max-width: 1692px) {
-        height: 1450px;
-    }
-
     @media (min-width: 1693px) and (max-width: 1728px) {
         height: 398px;
+    }
+    
+    @media (min-width: 493px) and (max-width: 1692px) {
+        height: 1480px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media( max-width: 492px ) {
+        height: 1670px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -233,14 +239,6 @@ button {
     width: 80%;
 }
 
-.SuccessfulConfirmationTitle {
-    color: var( --kv-success-color )
-}
-
-.UnsuccessfulConfirmationTitle, .ErrorMessageClass {
-    color: var( --kv-error-color )
-}
-
 form {
     input[type="text"], input[type="email"], input[type="tel"]  {
         width: 98%;
@@ -248,7 +246,6 @@ form {
         margin-top: 1vh;
         margin-bottom: 3vh;
         padding-inline: 1vw;
-        border: 1px solid orange;
         border-radius: 4px; /* Rounded corners for a modern look, queda bonito */
         box-sizing: border-box;
     }
@@ -282,8 +279,6 @@ form {
     input[type="checkbox"] {
         cursor: pointer;
         transform: scale( 2 );
-        accent-color: var( --kryptonvet-foreground-dark-color );
-        border-color: orange;
     }
 
     select {
@@ -292,35 +287,20 @@ form {
         margin-top: 1vh;
         margin-bottom: 11vh;
         padding-inline: 1vw;
-        border: 1px solid orange;
         border-radius: 4px;
         box-sizing: border-box;
         cursor: pointer;
     }
 
     input[type="submit"] {
-        background-color: var( --kv-primary-accent-color-darkmid );
-        color: white;
         border: none;
         width: 98%;
         padding: 10px 30px;
         margin-top: 4vh;
         margin-bottom: 10vh;
-        border: 3px solid var( --kv-primary-accent-color-darksoft );
         border-radius: 5px; /* Rounded corners para un lindo look y estilo moderno */
         text-transform: uppercase;
         cursor: pointer;
-        transition: background-color .2s ease;
-
-        &:hover {
-            background-color: var( --kryptonvet-button-hover-color ); /* Lighter on hover */
-            transition: background-color .3s ease;
-        }
-
-        &:active { 
-            background-color: var( --kryptonvet-button-pressed-color ); /* Darker on press */
-            transition: background-color .1s ease;
-        }
     }
 }
 

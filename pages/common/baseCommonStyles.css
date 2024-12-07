@@ -1,49 +1,28 @@
 :root {
     
-    /* Theme Colors */
+    /* Colors */
 
-    --dark-theme-background-color: #222222;
-    --dark-theme-foreground-color: #F7F1FF;
-    --dark-theme-accent-color: #FAF5D0;
-    --light-theme-background-color: #f0f8f8;
-    --light-theme-foreground-color: #444444; /* midnightblue; */
-    --light-theme-accent-color: #3B3B3B;
-    --kryptonvet-background-dark-color: #00222b;
-    --kryptonvet-background-light-color: #c1d7d4;
-    --kryptonvet-background-accent-color: #478189;
-    --kryptonvet-foreground-dark-color: #d36b10;
-    --kryptonvet-button-hover-color: #fc8217;
-    --kryptonvet-button-pressed-color: #a5540d;
-    --kryptonvet-foreground-light-color: #ffad7b;
+    /* Theme Bound Colors */
     
-
     --kv-dark-theme-background-darkest : rgba( 18, 0, 20, .89 );
-    --kv-dark-theme-background-darkmid : rgba(47, 13, 4, .5 );
-    --kv-dark-theme-background-darksoft : rgba(16, 47, 4, .3 );
-    --kv-dark-theme-footer-background : rgba( 255, 255, 255, .13 );
-    --kv-dark-theme-foreground-darkest : #a3a3a3;
-    --kv-dark-theme-foreground-darkmid : #CCCCCC;
-    --kv-dark-theme-foreground-darksoft : #F5F5F5;
-
-    --kv-light-theme-background-lightsoft : #F8F0F8;
+    --kv-dark-theme-background-white-color-13 : rgba( 255, 255, 255, .13 );
+    
     --kv-light-theme-background-lightmid : #F0F8F8;
-    --kv-light-theme-background-lightest : #F8F8F0;
-    --kv-light-theme-foreground-lightsoft : #363636;
-    --kv-light-theme-foreground-lightmid : #444444;
-    --kv-light-theme-foreground-lightest : #525252;
-    --kv-light-theme-foreground-lightest-70 : rgb(82, 82, 82, .7);
+    --kv-light-theme-foreground-lightest-70 : rgb( 82, 82, 82, .7 );
+    --kv-light-theme-footer-background-color : #ffad7b;
+    
+    /* Foreground Colors for Text */
 
     --kv-foreground-light-strong-color-bg : #FBFBFB;
-    --kv-foreground-black-color-91 : rgb(0, 0, 0, .91);
-    --kv-foreground-black-color-81 : rgb(0, 0, 0, .81);
-    --kv-foreground-black-color-61 : rgb(0, 0, 0, .61);
-    --kv-foreground-black-color-51 : rgb(0, 0, 0, .51);
-    --kv-foreground-black-color-31 : rgb(0, 0, 0, .31);
-    --kv-foreground-white-color-91 : rgb(255, 255, 255, .91);
-    --kv-foreground-white-color-81 : rgb(255, 255, 255, .81);
-    --kv-foreground-white-color-61 : rgb(255, 255, 255, .61);
-    --kv-foreground-white-color-51 : rgb(255, 255, 255, .51);
-    --kv-foreground-white-color-31 : rgb(255, 255, 255, .31);
+    --kv-foreground-black-color-81 : rgb( 0, 0, 0, .81 );
+    --kv-foreground-black-color-61 : rgb( 0, 0, 0, .61 );
+    --kv-foreground-black-color-31 : rgb( 0, 0, 0, .31 );
+    --kv-foreground-white-color-91 : rgb( 255, 255, 255, .91 );
+    --kv-foreground-white-color-81 : rgb( 255, 255, 255, .81 );
+    --kv-foreground-white-color-61 : rgb( 255, 255, 255, .61 );
+    --kv-foreground-white-color-51 : rgb( 255, 255, 255, .51 );
+
+    /* Accent Colors */
 
     --kv-primary-accent-color-darkest : #A9560D;
     --kv-primary-accent-color-darkmid : #d36b10;
@@ -51,15 +30,18 @@
     --kv-primary-accent-color-light : orange;
     --kv-primary-accent-color-lesslight : darkorange;
     --kv-primary-accent-color-lightless : orangered;
-    --kv-secondary-accent-color-darkest-75 : rgb(241, 227, 125, .75);
+    --kv-secondary-accent-color-darkest-75 : rgb( 241, 227, 125, .75 );
     --kv-secondary-accent-color-darkest : #F1E37D;
     --kv-secondary-accent-color-darkmid : #FAF5D0;
     --kv-thirdy-accent-color-darkest : #151C65;
     --kv-thirdy-accent-color-darkmid : #1A237E;
 
-    --kv-success-color : #00E676;
-    --kv-error-color : #B00020;
+    /* State Colors */
 
+    --kv-success-color : #00b85f;
+    --kv-success-color-on-dark-mode : #00E676;
+    --kv-error-color : #B00020;
+    --kv-error-color-on-dark-mode : #af8d93;
     
     /* SVG Filter Colors */
 

@@ -94,8 +94,24 @@ footer {
     flex-direction: column;
     justify-content: center;
 
-    @media( max-width: 1678px ) {
-        height: 100%;
+    @media (min-width: 493px) and (max-width: 1692px) {
+        height: 1480px;
+        justify-content: flex-start;
+
+        div {
+            margin-left: 2%;
+        }
+
+        #footerKryptonVetLogoDivId {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media( max-width: 492px ) {
+        height: 1670px;
+        justify-content: flex-start;
         
         div {
             margin-left: 2%;
@@ -128,8 +144,8 @@ footer {
             width: 95%;
             flex-flow: column;
             justify-content: center;
-            padding-right: 50%;
-            height: 100%;
+            padding-top: 0;
+            height: fit-content;
         }
 
         a {
