@@ -23,11 +23,11 @@
         const menuItems = document.querySelectorAll( '.HeaderLinksClass a' );
 
         menuItems.forEach( item => {
-            item.classList.remove( 'ActivePageMenu' );
+            if ( item.getAttribute( 'data-page' ) != currentPage && item.classList.contains( 'ActivePageMenu' ) )
+                item.classList.remove( 'ActivePageMenu' );
             
-            if ( item.getAttribute( 'data-page' ) === currentPage ) {
+            if ( item.getAttribute( 'data-page' ) === currentPage && !item.classList.contains( 'ActivePageMenu' ) )
                 item.classList.add( 'ActivePageMenu' );
-            }
         } );
     } );
 </script>
